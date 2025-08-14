@@ -1,0 +1,2 @@
+Use blue marble, coordinates 520 760 864 981
+Image template here: https://pgm.sh/amtrakf40.png

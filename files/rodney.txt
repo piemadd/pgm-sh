@@ -1,2 +1,2 @@
 Use blue marble, coordinates 578 771 74 480
-Image template here: https://pgm.sh/rod.png
+Image template here: https://pgm.sh/files/rod.png

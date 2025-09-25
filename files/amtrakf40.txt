@@ -2,4 +2,4 @@ THIS PROJECT HAS BEEN COMPLETED
 Throughout its creation, we've taken some liberties away from the design, so the template isnt exact.
 
 Use blue marble, coordinates 522 760 92 912
-Image template here: https://pgm.sh/amtrakf40.png
+Image template here: https://pgm.sh/files/amtrakf40.png

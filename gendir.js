@@ -6,7 +6,7 @@ const toHTMLBetter = (dir, paths) => {
 <html>
   <head><title>Index of ${dir}</title><link rel="stylesheet" href="/style.css"></head>
   <body><h1>Index of ${dir}</h1>
-  <hr><pre id="filesList">      <b>Filename</b>                                           <b>Date Modified</b>                   <b>Size (bytes)</b>${dir != './' && dir != 'files' ? '\n      <a href="../" title="../">Back</a>' : ''}
+  <hr><pre id="filesList">      <b>Filename</b>                                           <b>Date Modified</b>                   <b>Size (bytes)</b>${/*dir != './' && dir != 'files' ? '\n      <a href="../" title="../">Back</a>' : ''*/''}
 ${paths.map((path) => {
   //console.log(path.path)
   const name = path.type === 'directory' ? `${path.name}/` : `${path.name}`;

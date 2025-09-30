@@ -34,7 +34,8 @@
     "wordwrapjs": "^4.0.1"
   },
   "scripts": {
-    "build": "node gendir.js"
+    "build": "node gendir.js",
+    "dev": "http-server --port 3000"
   },
   "repository": {
     "type": "git",

@@ -6,14 +6,14 @@ const toHTMLBetter = (dir, paths) => {
 <html>
   <head><title>Index of ${dir}</title><link rel="stylesheet" href="/style.css"></head>
   <body><h1>Index of ${dir}</h1>
-  <hr><pre id="filesList">      <b>Filename</b>                                           <b>Date Modified</b>                   <b>Size (bytes)</b>${/*dir != './' && dir != 'files' ? '\n      <a href="../" title="../">Back</a>' : ''*/''}
+  <ul>
 ${paths.map((path) => {
-  //console.log(path.path)
-  const name = path.type === 'directory' ? `${path.name}/` : `${path.name}`;
-  const filePath = path.type === 'directory' ? `./${path.name}` : `/${dir}/${path.name}`; 
+    //console.log(path.path)
+    const name = path.type === 'directory' ? `${path.name}/` : `${path.name}`;
+    const filePath = path.type === 'directory' ? `./${path.name}` : `/${dir}/${path.name}`;
 
-    return `      <a href="${filePath}" title="${path.name}">${name}</a>${path.name.padEnd(path.type === 'directory' ? 50 : 51, ' ').replace(path.name, '')}${path.mtime.toISOString().split('T').join(' ')}${path.size.toString().padStart(20, ' ')}`
-  }).join('\n')}</pre><hr>
+    return `<li><a href="${filePath}" title="${path.name}">${name}</a></li>`
+  }).join('\n')}</ul>
   </body>
 </html>`
     .trim();

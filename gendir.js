@@ -8,11 +8,11 @@ const toHTMLBetter = (dir, paths) => {
   <body><h1>Index of ${dir}</h1>
   <ul>
 ${paths.map((path) => {
-    //console.log(path.path)
+    console.log(path)
     const name = path.type === 'directory' ? `${path.name}/` : `${path.name}`;
     const filePath = path.type === 'directory' ? `./${path.name}` : `/${dir}/${path.name}`;
 
-    return `<li><a href="${filePath}" title="${path.name}">${name}</a></li>`
+    return `<li><a href="${filePath}" ${path.type == 'file' ? 'target="_blank" ' : ''}title="${path.name}">${name}</a></li>`
   }).join('\n')}</ul>
   </body>
 </html>`

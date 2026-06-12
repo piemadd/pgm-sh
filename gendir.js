@@ -42,7 +42,7 @@ const getArrayOfAllDirs = (parent) => {
 fs.existsSync('./dir') && fs.rmSync('./dir', { recursive: true });
 
 const tree = dirTree("./", {
-  exclude: /csv|zips|node_modules|\.env|\.git|package-lock\.json|\.env|index\.html/,
+  exclude: /node_modules|\.env|\.git|package-lock\.json|\.env|index\.html/,
   attributes: ['size', 'type', 'mtime']
 });
 
